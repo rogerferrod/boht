@@ -1,0 +1,59 @@
+{
+  "BERT_RNN": {
+    "optimizer": "ADAM",
+    "lr": 0.001,
+    "emb_dim": 768,
+    "hidden2": 384,
+    "prob_emb": 0.0,
+    "prob2": 0.2,
+    "weight": 0,
+    "layers": "last",
+    "clip": 3.0,
+    "units": "lstm"
+  },
+  "RNN_RNN": {
+    "optimizer": "ADAM",
+    "lr": 0.001,
+    "emb_dim": 768,
+    "hidden1": 192,
+    "hidden2": 300,
+    "prob_emb": 0.0,
+    "prob1": 0.2,
+    "prob2": 0.4,
+    "weight": 1e-5,
+    "layers": "last",
+    "clip": 3.0,
+    "units": "lstm"
+  },
+  "CNN_RNN": {
+    "optimizer": "ADAM",
+    "lr": 0.001,
+    "emb_dim": 768,
+    "hidden1": 85,
+    "hidden2": 30,
+    "prob_emb": 0.0,
+    "prob1": 0.2,
+    "prob2": 0.2,
+    "weight": 0,
+    "layers": "last",
+    "clip": 3.0,
+    "stride": 1,
+    "units": "lstm"
+  },
+  "ATT_RNN": {
+    "optimizer": "ADAM",
+    "lr": 1e-5,
+    "emb_dim": 3072,
+    "hidden1": 3072,
+    "hidden2": 2024,
+    "prob_emb": 0.0,
+    "prob1": 0.2,
+    "prob2": 0.2,
+    "weight": 0,
+    "layers": "concat",
+    "clip": 3.0,
+    "heads": 2,
+    "positional": true,
+    "units": "lstm"
+  }
+}

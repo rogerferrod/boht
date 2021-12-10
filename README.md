@@ -93,7 +93,7 @@ For test and demo mode additional parameters are required:
 
 Meanwhile, for training the required parameters are:
 ```
-----train_data_path     dataset used training
+--train_data_path     dataset used training
 --valid_data_path       dataset used for evalutation
 --params                path to the json file containing all the configurable hyper-parameters of the network
 --classifier            the name of the desired classifier model (the list of classifiers is available in parameters.json)
